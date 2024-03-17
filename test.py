@@ -65,8 +65,8 @@ class Board:
             pygame.draw.rect(win, GREEN, (self.max_player_location[0] * SQUARE_SIZE, self.max_player_location[1] * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
             pygame.draw.rect(win, RED, (self.min_player_location[0] * SQUARE_SIZE, self.min_player_location[1] * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
         #draw the queens
-        win.blit(self.white_queen, (self.max_player_location[0] * SQUARE_SIZE, self.max_player_location[1] * SQUARE_SIZE))
-        win.blit(self.black_queen, (self.min_player_location[0] * SQUARE_SIZE, self.min_player_location[1] * SQUARE_SIZE))
+        win.blit(self.black_queen, (self.max_player_location[0] * SQUARE_SIZE, self.max_player_location[1] * SQUARE_SIZE))
+        win.blit(self.white_queen, (self.min_player_location[0] * SQUARE_SIZE, self.min_player_location[1] * SQUARE_SIZE))
 
     def move(self, row, col, player):
         if player == 0:
